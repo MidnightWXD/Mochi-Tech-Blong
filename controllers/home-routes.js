@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Techblog, User } = require('../models');
+const withAuth = require('../utils/auth');
 
 // GET all techblogs for homepage
 router.get('/', async (req, res) => {
@@ -29,6 +30,15 @@ router.get('/', async (req, res) => {
 
 
 
+router.get('/new', withAuth , async (req, res) => {
+  try {
+    res.render('newtechblog', {
+      loggedIn: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {

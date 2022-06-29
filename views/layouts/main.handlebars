@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
                     <ul class="nav navbar-nav">
                         <li class="home"><a href="/">Home</a></li>
                         <li><a href="/dashboard">Dashboard</a></li>
-                        {{#if isLoggedIn}}
-                            <a href="/">logout</a>                       
+                        {{#if loggedIn}}
+                            <li><a href="/" id="logout">Logout</a></li>                     
                         {{else}}
                             <li><a href="/login">Login</a></li>
                         {{/if}}                  
@@ -34,7 +34,7 @@
         </div>
     </main>
 
-    {{#if logged_in}}
+    {{#if loggedIn}}
     <script src="/js/logout.js"></script>
     {{/if}}
     

@@ -62,7 +62,7 @@ span {
   font-size: medium;
 }
 
-.login-form, .signup-form {
+.login-form, .signup-form, .post-form {
   border: var(--purple) solid 3px;
   padding: 20px;
 }
@@ -74,4 +74,14 @@ h3 {
   margin: 0;
   padding: 10px;
   background-color: var(--purple);
+}
+
+.postBtn {
+  /* keep the btn at the end of the page and keep it center */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  margin-top: 800px;
 }
