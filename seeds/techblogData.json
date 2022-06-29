@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Why use node.js?",
+        "content": "Because it's a cool language and it's easy to learn."
+    },
+    {
+        "title":"What is the difference between node.js and python?",
+        "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+    }
+]
+
