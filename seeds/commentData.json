@@ -1,0 +1,10 @@
+[
+    {
+        "comment": "This is a comment for MVP",
+        "Comment_id" : "1"
+    },
+    {
+        "comment": "This is a comment",
+        "Comment_id" : "2"
+    }
+]

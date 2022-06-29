@@ -37,5 +37,41 @@
   font-size: large;
 }
 
+.card {
+  border: var(--purple) solid 3px;
+  margin: 10px auto;
+  color: #C1C8E4;
+}
 
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background-color: var(--purple);
+}
 
+.content {
+  padding: 10px;
+  color: black;
+}
+/* keep content of span at the end of line */
+span {
+  background-color: var(--purple);
+  font-size: medium;
+}
+
+.login-form, .signup-form {
+  border: var(--purple) solid 3px;
+  padding: 20px;
+}
+
+h3 {
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background-color: var(--purple);
+}

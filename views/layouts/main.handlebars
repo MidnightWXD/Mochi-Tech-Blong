@@ -15,12 +15,12 @@
             <nav>
                 <div class="container">
                     <ul class="nav navbar-nav">
-                        <li class="home"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li class="home"><a href="/">Home</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
                         {{#if isLoggedIn}}
-                            <li><a href="{{urlFor 'logout'}}">Logout</a></li>
+                            <a href="/">logout</a>                       
                         {{else}}
-                            <li><a href="{{urlFor 'login'}}">Login</a></li>
+                            <li><a href="/login">Login</a></li>
                         {{/if}}                  
                     </ul>
                 </div>
@@ -33,11 +33,10 @@
             {{{body}}}
         </div>
     </main>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
     
-    <footer>
-        <div class="container">
-            <p>&copy; {{currentYear}} The Tech Blog</p>
-        </div>
-    </footer>
 </body>
 </html>
